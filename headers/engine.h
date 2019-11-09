@@ -1,6 +1,10 @@
 #ifndef engine_h
 #define engine_h
 
-void gameplay_fly(screen_w, screen_l, ship_x, ship_y, ship_size);
+extern int screen_l, screen_w, player_size, game_state;
+extern ALLEGRO_KEYBOARD_STATE klawiatura;
+
+void gameplay_fly();
+void projectiles();
 
 #endif
