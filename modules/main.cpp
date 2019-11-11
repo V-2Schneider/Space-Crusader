@@ -19,7 +19,7 @@ int main()
     load_graph();
     load_musique();
     al_set_target_bitmap(al_get_backbuffer(screen));
-    double czas = 0, pattern_time[2], znowu_czas, menu_time = al_get_time();
+    double time = 0, pattern_time[2], time2, menu_time = al_get_time();
     clear_patterns();
     bool exit;
     while(!((al_key_down(&klawiatura, ALLEGRO_KEY_ESCAPE))||(exit == true)))
@@ -30,12 +30,12 @@ int main()
             menu_loop(&menu_time, &exit);
             break;
         case 2:
-            game_loop(&czas, pattern_time, &znowu_czas);
+            game_loop(&time, pattern_time, &time2);
             break;
         }
 
     }
 
-    destroy_all(musique_level_1, statek, tlo, screen);
+    destroy_all(musique_level_1, ship, background, screen);
     return 0;
 }

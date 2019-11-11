@@ -15,10 +15,10 @@ void al_init_all()
     al_reserve_samples(1);
 }
 
-void destroy_all(ALLEGRO_SAMPLE *music, ALLEGRO_BITMAP *statek, ALLEGRO_BITMAP *tlo, ALLEGRO_DISPLAY *okno)
+void destroy_all(ALLEGRO_SAMPLE *music, ALLEGRO_BITMAP *ship, ALLEGRO_BITMAP *background, ALLEGRO_DISPLAY *windows)
 {
     al_destroy_sample(music);
-    al_destroy_bitmap(statek);
-    al_destroy_bitmap(tlo);
-    al_destroy_display(okno);
+    al_destroy_bitmap(ship);
+    al_destroy_bitmap(background);
+    al_destroy_display(windows);
 }
