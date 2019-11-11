@@ -10,3 +10,6 @@ About the code- it's not good too, but like I said before- everyone started some
 I've cleaned up this repo a bit, removed the library and many other unnecessary files!
 
 Graphics are removed now too, but I'll probably bring them back someday, after other cleanup
+
+### Some Problems with the repo
+Right now there are some files missing, not to mention that there were still a lot of files that shouldn't even be here! How absurd!
