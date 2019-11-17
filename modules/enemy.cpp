@@ -11,6 +11,18 @@ bool projectile[3] = {false, false, false}, player_dead = false, untouchable = f
 bool enemy_exists[32], enemy_is_dead[32], enemy_missles[32];
 bool patterns[12], level_start[3] = {true, true, true}, ending = false;
 
+struct Enemy_Missle {
+	int enemy_missle_x;
+	int enemy_missle_y;
+};
+
+struct Enemy {
+	int enemy_x;
+	int enemy_y;
+	bool enemy_exists;
+	bool enemy_is_dead;
+	struct Enemy_Missle enemy_missles[16];
+};
 
 void check_hitbox(int how_many, int points)
 {
