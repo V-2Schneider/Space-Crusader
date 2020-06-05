@@ -1,9 +1,9 @@
 #include <allegro5/allegro.h>
-#include <levels.h>
-#include <enemy.h>
-#include <engine.h>
-#include <draw.h>
-#include <file.h>
+//#include <../headers/levels.h>
+#include "../headers/enemy.h"
+#include "../headers/engine.h"
+#include "../headers/draw.h"
+#include "../headers/file.h"
 
 int menu_state = 1, pattern = 1;
 int menu_selection = 1, menu_y, continue_menu = 1, level_number = 0, how_many;

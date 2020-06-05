@@ -1,15 +1,16 @@
-#include <allegro5/allegro.h>
+#include <allegro.h>
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_image.h>
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_acodec.h>
-#include <al_init_all.h>
-#include <draw.h>
+#include "../headers/al_init_all.h"
 #include <cmath>
-#include <engine.h>
-#include <enemy.h>
-#include <levels.h>
-#include <file.h>
+#include "../headers/engine.h"
+#include "../headers/enemy.h"
+#include "../headers/levels.h"
+#include "../headers/file.h"
+#include "../headers/draw.h"
+#include "../headers/musique.h"
 
 int main()
 {
@@ -22,7 +23,7 @@ int main()
     double time = 0, pattern_time[2], time2, menu_time = al_get_time();
     clear_patterns();
     bool exit;
-    while(!((al_key_down(&klawiatura, ALLEGRO_KEY_ESCAPE))||(exit == true)))
+    while(!((al_key_down(&keyboard, ALLEGRO_KEY_ESCAPE))||(exit == true)))
     {
         switch (menu_state)
         {

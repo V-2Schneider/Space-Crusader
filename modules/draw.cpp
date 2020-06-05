@@ -1,7 +1,8 @@
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_image.h>
 #include <allegro5/allegro_font.h>
-#include <enemy.h>
+#include "../headers/enemy.h"
+#include "../headers/draw.h"
 
 ALLEGRO_BITMAP *ship, *background, *bullet, *target, *targetX, *enemy_missle, *dead_ship, *ayyylien, *ayyylienX, *game_over, *ship_un;
 ALLEGRO_BITMAP *menu_back, *new_game_g, *load_game_g, *exit_g, *border, *mission_end, *end_screen, *background2, *background3, *high_scores_g, *high_scores_back;

@@ -1,10 +1,10 @@
 #ifndef draw_h
 #define draw_h
-#include <allegro5/allegro_font.h>
+#include <allegro_font.h>
 
-extern ALLEGRO_BITMAP *statek, *tlo, *pocisk, *tarcza, *tarczaX, *enemy_missle, *dead_ship, *ayyylien, *ayyylienX, *game_over, *statek_un;
-extern ALLEGRO_BITMAP *menu_back, *new_game_g, *load_game_g, *exit_g, *border, *mission_end, *end_screen, *tlo2, *tlo3, *high_scores_g, *high_scores_back;
-extern ALLEGRO_BITMAP *yyh, *yyhX;;
+extern ALLEGRO_BITMAP *ship, *background, *bullet, *target, *targetX, *enemy_missle, *dead_ship, *ayyylien, *ayyylienX, *game_over, *ship_un;
+extern ALLEGRO_BITMAP *menu_back, *new_game_g, *load_game_g, *exit_g, *border, *mission_end, *end_screen, *background2, *background3, *high_scores_g, *high_scores_back;
+extern ALLEGRO_BITMAP *ev_spaceship, *ev_spaceshipX;
 extern ALLEGRO_FONT *font8;
 extern int back_y[2];
 

@@ -1,6 +1,8 @@
 #why was this even here?
 bin/
+allegro/
 allegro.log
 *.save
 obj/
 .old/
+*.exe

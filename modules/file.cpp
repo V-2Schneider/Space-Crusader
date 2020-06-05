@@ -1,6 +1,6 @@
 #include <fstream>
-#include <enemy.h>
-#include <levels.h>
+#include "../headers/enemy.h"
+#include "../headers/levels.h"
 #include <stdio.h>
 
 using namespace std;
