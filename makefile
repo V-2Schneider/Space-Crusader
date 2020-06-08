@@ -1,0 +1,2 @@
+all: ./modules/al_init_all.cpp ./modules/draw.cpp ./modules/enemy.cpp ./modules/engine.cpp ./modules/file.cpp ./modules/levels.cpp ./modules/musique.cpp ./modules/main.cpp
+	g++ ./modules/al_init_all.cpp ./modules/draw.cpp ./modules/enemy.cpp ./modules/engine.cpp ./modules/file.cpp ./modules/levels.cpp ./modules/musique.cpp ./modules/main.cpp -o main.exe -Ic:/api/include/allegro5 -Lc:/api/lib -lallegro -lallegro_font -lallegro_audio -lallegro_image -lallegro_acodec

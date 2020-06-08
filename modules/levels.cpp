@@ -1,4 +1,4 @@
-#include <allegro5/allegro.h>
+#include <allegro.h>
 //#include <../headers/levels.h>
 #include "../headers/enemy.h"
 #include "../headers/engine.h"

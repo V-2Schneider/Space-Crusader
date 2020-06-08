@@ -1,6 +1,6 @@
-#include <allegro5/allegro.h>
-#include <allegro5/allegro_image.h>
-#include <allegro5/allegro_font.h>
+#include <allegro.h>
+#include <allegro_image.h>
+#include <allegro_font.h>
 #include "../headers/enemy.h"
 #include "../headers/draw.h"
 

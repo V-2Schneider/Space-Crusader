@@ -1,4 +1,4 @@
-#include <allegro5/allegro.h>
+#include <allegro.h>
 #include "../headers/enemy.h"
 
 int screen_l=800, screen_w=600, player_size=40, game_state = 1;

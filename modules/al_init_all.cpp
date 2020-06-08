@@ -1,8 +1,8 @@
-#include <allegro5/allegro.h>
-#include <allegro5/allegro_font.h>
-#include <allegro5/allegro_image.h>
-#include <allegro5/allegro_audio.h>
-#include <allegro5/allegro_acodec.h>
+#include <allegro.h>
+#include <allegro_font.h>
+#include <allegro_image.h>
+#include <allegro_audio.h>
+#include <allegro_acodec.h>
 
 void al_init_all()
 {

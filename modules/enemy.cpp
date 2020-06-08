@@ -1,4 +1,4 @@
-#include <allegro5/allegro.h>
+#include <allegro.h>
 //#include <enemy.h>
 
 short lives = 5;

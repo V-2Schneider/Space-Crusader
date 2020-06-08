@@ -1,6 +1,6 @@
-#include <allegro5/allegro.h>
-#include <allegro5/allegro_audio.h>
-#include <allegro5/allegro_acodec.h>
+#include <allegro.h>
+#include <allegro_audio.h>
+#include <allegro_acodec.h>
 
 ALLEGRO_SAMPLE *musique_level_1;
 
