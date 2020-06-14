@@ -24,7 +24,7 @@ void load_graph()
     ayyylien = al_load_bitmap("graph/enemies/alien.png");
     ayyylienX = al_load_bitmap("graph/enemies/alien-X.png");
     ev_spaceship = al_load_bitmap("graph/enemies/ev_spaceship.png");
-    ev_spaceshipX = al_load_bitmap("graph/enemies/ev_spaceshipX.png");
+    ev_spaceshipX = al_load_bitmap("graph/enemies/ev_spaceship-X.png");
     enemy_missle = al_load_bitmap("graph/enemies/ammo/bullet.png");
     game_over = al_load_bitmap("graph/menu/game_over.png");
     menu_back = al_load_bitmap("graph/menu/background.png");
