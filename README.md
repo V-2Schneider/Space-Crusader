@@ -15,8 +15,6 @@ Graphics are removed now too, but I'll probably bring them back someday, after o
 Right now there are some files missing, not to mention that there were still a lot of files that shouldn't even be here! How absurd!
 
 ### How to compile it?
-uuhh, wait for it, right now I'm using this command:
-g++ .\modules\al_init_all.cpp .\modules\draw.cpp .\modules\enemy.cpp .\modules\engine.cpp .\modules\file.cpp .\modules\levels.cpp .\modules\musique.cpp .\modules\main.cpp -o main.exe -Ic:\api\include\allegro5 -Lc:\api\lib -lallegro -lallegro_font -lallegro_audio -lallegro_image -lallegro_acodec
+There's a makefile, so you just need to download allegro5 (don't worry, it's a free library) and put in in project's root. I still haven't tested it on linux, but there shouldn't be any issues. 
 
-You can see in here where I keep allegro5 header files and libraries but I don't mind- and as you can clearly see, you need to get yourself a copy of allegro5 (easy, it's free)
 
