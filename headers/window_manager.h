@@ -6,9 +6,10 @@
 #include <allegro_image.h>
 #include <allegro_audio.h>
 #include <allegro_acodec.h>
-#include "al_init_all.h"
 
 ALLEGRO_DISPLAY* create_window();
 ALLEGRO_DISPLAY* init();
+void destroy_all(ALLEGRO_SAMPLE *music, ALLEGRO_BITMAP *statek, ALLEGRO_BITMAP *tlo, ALLEGRO_DISPLAY* screen);
+void al_init_all();
 
 #endif

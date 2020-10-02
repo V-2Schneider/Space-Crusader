@@ -3,7 +3,6 @@
 #include <allegro_image.h>
 #include <allegro_audio.h>
 #include <allegro_acodec.h>
-#include "../headers/al_init_all.h"
 #include <cmath>
 #include "../headers/engine.h"
 #include "../headers/enemy.h"
