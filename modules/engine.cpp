@@ -1,6 +1,8 @@
 #include <allegro.h>
 #include "../headers/enemy.h"
 
+#define PLAYER_SPEED 2;
+
 int screen_l=800, screen_w=600, player_size=40, game_state = 1;
 ALLEGRO_KEYBOARD_STATE keyboard;
 
@@ -9,13 +11,13 @@ void gameplay_fly()
 {
     if ((player_dead == false)&&(ending==false))
     {
-        if ( al_key_down(&keyboard, ALLEGRO_KEY_RIGHT ) && player_x < screen_l - player_size) player_x += 2;
+        if ( al_key_down(&keyboard, ALLEGRO_KEY_RIGHT ) && player_x < screen_l - player_size) player_x += PLAYER_SPEED;
 
-        if ( al_key_down(&keyboard, ALLEGRO_KEY_LEFT ) && player_x > 0) player_x -= 2;
+        if ( al_key_down(&keyboard, ALLEGRO_KEY_LEFT ) && player_x > 0) player_x -= PLAYER_SPEED;
 
-        if ( al_key_down(&keyboard, ALLEGRO_KEY_DOWN ) && player_y < screen_w - player_size) player_y += 2;
+        if ( al_key_down(&keyboard, ALLEGRO_KEY_DOWN ) && player_y < screen_w - player_size) player_y += PLAYER_SPEED;
 
-        if ( al_key_down(&keyboard, ALLEGRO_KEY_UP ) && player_y > 0) player_y -= 2;
+        if ( al_key_down(&keyboard, ALLEGRO_KEY_UP ) && player_y > 0) player_y -= PLAYER_SPEED;
     }
 }
 
@@ -50,3 +52,12 @@ void projectiles()
     for (int i = 0 ; i < 3 ; i++)
         if (shot_y[i] < -20) projectile[i] = false;
 }
+
+/*
+bool check_collision(int obj1_x, int obj1_y, int obj2_x, int obj2_y, int size1, int size2){
+    return (((obj1_x[j]<=obj2_x[i])||(obj1_x[j]<=obj2_x[i]+10))
+    &&((obj1_y[j]<=obj2_y[i])||(obj1_y[j]<=obj2_y[i]+20))
+    &&((obj1_x[j]+40>=obj2_x[i])
+            ||(obj1_x[j]+40>=obj2_x[i]+10))
+            &&((obj1_y[j]+40>=obj2_y[i])||(obj1_y[j]+40>=obj2_y[i]+20)))
+}*/

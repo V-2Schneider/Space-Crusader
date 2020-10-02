@@ -7,4 +7,12 @@ extern ALLEGRO_KEYBOARD_STATE keyboard;
 void gameplay_fly();
 void projectiles();
 
+struct player {
+    int pos_x;
+    int pos_y;
+    int size_x;
+    int size_y;
+
+};
+
 #endif

@@ -11,12 +11,11 @@
 #include "../headers/file.h"
 #include "../headers/draw.h"
 #include "../headers/musique.h"
+#include "../headers/window_manager.h"
 
 int main()
 {
-    al_init_all();
-    ALLEGRO_DISPLAY *screen = al_create_display(screen_l, screen_w);
-    al_set_window_title( screen,"Space Crusader");
+    ALLEGRO_DISPLAY *screen = init();
     load_graph();
     load_musique();
     al_set_target_bitmap(al_get_backbuffer(screen));
