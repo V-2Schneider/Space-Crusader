@@ -2,11 +2,11 @@
 #include <allegro_audio.h>
 #include <allegro_acodec.h>
 
-ALLEGRO_SAMPLE *musique_level_1;
+//ALLEGRO_SAMPLE *musique_level_1;
 
 void load_musique()
 {
-    musique_level_1 = al_load_sample("musique/Distant2.ogg");
+    //musique_level_1 = al_load_sample("musique/Distant2.ogg");
 }
 
 void play_musique(ALLEGRO_SAMPLE *music)

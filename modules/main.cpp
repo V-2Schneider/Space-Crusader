@@ -36,6 +36,6 @@ int main()
 
     }
 
-    destroy_all(musique_level_1, ship, background, screen);
+    destroy_all(ship, background, screen);
     return 0;
 }

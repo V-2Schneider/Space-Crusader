@@ -21,9 +21,8 @@ ALLEGRO_DISPLAY* init(){
     return screen;
 }
 
-void destroy_all(ALLEGRO_SAMPLE *music, ALLEGRO_BITMAP *ship, ALLEGRO_BITMAP *background, ALLEGRO_DISPLAY* screen)
+void destroy_all(ALLEGRO_BITMAP *ship, ALLEGRO_BITMAP *background, ALLEGRO_DISPLAY* screen)
 {
-    al_destroy_sample(music);
     al_destroy_bitmap(ship);
     al_destroy_bitmap(background);
     al_destroy_display(screen);
