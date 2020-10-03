@@ -3,7 +3,7 @@
 
 #define PLAYER_SPEED 2;
 
-int screen_l=800, screen_w=600, player_size=40, game_state = 1;
+int screen_l=800, screen_w=600, player_size=40, game_states = 1;
 ALLEGRO_KEYBOARD_STATE keyboard;
 
 

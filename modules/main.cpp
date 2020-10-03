@@ -15,20 +15,21 @@
 int main()
 {
     ALLEGRO_DISPLAY *screen = init();
-    load_graph();
-    load_musique();
-    al_set_target_bitmap(al_get_backbuffer(screen));
-    double time = 0, pattern_time[2], time2, menu_time = al_get_time();
-    clear_patterns();
+    double time = 0, 
+        pattern_time[2], 
+        time2, 
+        menu_time = al_get_time();
     bool exit;
+    game_state state = main_menu;
+
     while(!((al_key_down(&keyboard, ALLEGRO_KEY_ESCAPE))||(exit == true)))
     {
-        switch (menu_state)
+        switch (state)
         {
-        case 1:
-            menu_loop(&menu_time, &exit);
+        case main_menu:
+            menu_loop(&menu_time, &exit, &state);
             break;
-        case 2:
+        case game:
             game_loop(&time, pattern_time, &time2);
             break;
         }

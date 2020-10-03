@@ -1,7 +1,7 @@
 #ifndef engine_h
 #define engine_h
 
-extern int screen_l, screen_w, player_size, game_state;
+extern int screen_l, screen_w, player_size, game_states;
 extern ALLEGRO_KEYBOARD_STATE keyboard;
 
 void gameplay_fly();

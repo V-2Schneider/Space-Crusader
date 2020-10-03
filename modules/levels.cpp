@@ -1,11 +1,11 @@
 #include <allegro.h>
-//#include <../headers/levels.h>
+#include "../headers/levels.h"
 #include "../headers/enemy.h"
 #include "../headers/engine.h"
 #include "../headers/draw.h"
 #include "../headers/file.h"
 
-int menu_state = 1, pattern = 1;
+int pattern = 1;
 int menu_selection = 1, menu_y, continue_menu = 1, level_number = 0, how_many;
 bool level_1_done = false, saved;
 
@@ -75,10 +75,10 @@ void level_1(double *time1, double pattern_time[2], double *time2)
 
     }
     if (lives == 0)
-        game_state = 9;
+        game_states = 9;
     if (level_1_done == true)
     {
-        game_state = 10;
+        game_states = 10;
     }
 
 }
@@ -139,10 +139,10 @@ void level_2(double *time1, double pattern_time[2], double *time2)
 
     }
     if (lives == 0)
-        game_state = 9;
+        game_states = 9;
     if (level_1_done == true)
     {
-        game_state = 10;
+        game_states = 10;
     }
 
 }
@@ -203,10 +203,10 @@ void level_3(double *time1, double pattern_time[2], double *time2)
 
     }
     if (lives == 0)
-        game_state = 9;
+        game_states = 9;
     if (level_1_done == true)
     {
-        game_state = 11;
+        game_states = 11;
     }
 
 }
@@ -215,7 +215,7 @@ void level_3(double *time1, double pattern_time[2], double *time2)
 void game_loop(double *time1, double pattern_time[2], double *time2)
 {
         al_get_keyboard_state(&keyboard);
-        switch (game_state)
+        switch (game_states)
         {
         case 1:
             level_1(time1, pattern_time, time2);
@@ -277,7 +277,7 @@ void game_loop(double *time1, double pattern_time[2], double *time2)
                     player_x = 360;
                     player_y = 530;
                     continue_menu = 1;
-                    game_state = level_number+1;
+                    game_states = level_number+1;
                 }
                 break;
             case 4:
@@ -290,7 +290,7 @@ void game_loop(double *time1, double pattern_time[2], double *time2)
                     *time1 = 0;
                     player_x = 360;
                     player_y = 530;
-                    game_state = level_number+1;
+                    game_states = level_number+1;
                 }
                 break;
             }
@@ -306,7 +306,7 @@ void game_loop(double *time1, double pattern_time[2], double *time2)
 
 }
 
-void menu_loop(double *menu_time, bool *exit)
+void menu_loop(double *menu_time, bool *exit, game_state *game_state)
 {
 
         if (al_get_time() > *menu_time + 0.01)
@@ -328,7 +328,7 @@ void menu_loop(double *menu_time, bool *exit)
                 }
                 if(al_key_down(&keyboard, ALLEGRO_KEY_ENTER))
                 {
-                    menu_state = 2;
+                    *game_state = game;
 
                 }
                 break;
@@ -347,8 +347,8 @@ void menu_loop(double *menu_time, bool *exit)
                 if(al_key_down(&keyboard, ALLEGRO_KEY_ENTER))
                 {
                     load(&level_number);
-                    game_state = level_number;
-                    menu_state = 2;
+                    game_states = level_number;
+                    *game_state = game;
                 }
                 break;
 
